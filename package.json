@@ -1,9 +1,12 @@
 {
   "name": "react-javascript",
+  "homepage": "https://jbreitenbr.github.io/Spoti-Auth",
   "version": "1.0.0",
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -22,6 +25,7 @@
   },
   "dependencies": {
     "axios": "^1.7.9",
+    "gh-pages": "^6.2.0",
     "lodash": "^4.17.21",
     "react-router-dom": "^7.0.2",
     "spotify-web-api-js": "^1.5.2"
