@@ -18,3 +18,5 @@ export const isAccessTokenValid = () => {
   const currentTime = new Date().getTime();
   return currentTime < tokenExpiryTime;
 };
+const spotify = new SpotifyWebApi();
+export default spotify;

@@ -1,9 +1,18 @@
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export default function App() {
+import Login from "./Login";
+import RedirectPage from "./RedirectPage";
+import TestPage from "./TestPage";
+const App = () => {
   return (
-    <main>
-      Spotify Auth
-    </main>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/Spoti-Auth" element={<TestPage />}/>
+        <Route path="/Spoti-Auth/login" element={<Login />} />
+        <Route path="/Spoti-Auth/redirect" element={<RedirectPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;
